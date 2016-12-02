@@ -24,9 +24,9 @@
     <![endif]-->
 	
 	<script type="text/javascript">
-var disqus_developer = 1;
-var disqus_url = 'example.com; localhost';
-</script>
+	var disqus_developer = 1;
+	var disqus_url = '{{ site.url }}{{ page.url }}';
+	</script>
 
 </head>
 
@@ -65,17 +65,17 @@ var disqus_url = 'example.com; localhost';
 				<div style="float: right;"><a href="index.html" class="btn btn-default" id="menu-zaloguj">Zaloguj</a> <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">☰</a></div>
                     <div class="col" style="margin-top: -16px; margin-right: 15px; margin-left: 15px; z-index: -1">
                         <h1 style="font-variant: small-caps;">Notatka</h1>
-                        <p>Informatyka – dyscyplina nauki zaliczana do nauk ścisłych oraz techniki zajmująca się przetwarzaniem informacji, w tym również technologiami przetwarzania informacji oraz technologiami wytwarzania systemów przetwarzających informacje. Początkowo stanowiła część matematyki, później rozwinęła się do odrębnej dyscypliny – pozostaje jednak nadal w ścisłej relacji z matematyką, która dostarcza informatyce podstaw teoretycznych.</p>
+                        <p><b>Informatyka</b> – dyscyplina nauki zaliczana do nauk ścisłych oraz techniki zajmująca się przetwarzaniem informacji, w tym również technologiami przetwarzania informacji oraz technologiami wytwarzania systemów przetwarzających informacje. Początkowo stanowiła część matematyki, później rozwinęła się do odrębnej dyscypliny – pozostaje jednak nadal w ścisłej relacji z matematyką, która dostarcza informatyce podstaw teoretycznych.</p>
                         <p><h3>Nazewnictwo</h3>
-						Określenie informatyka ma swój odpowiednik w języku angielskim: computer science – dosłownie: nauka o komputerze – co może być mylące i dlatego jest krytykowane w środowiskach akademickich i informatycznych.</p>
+						Określenie informatyka ma swój odpowiednik w języku angielskim: <a>computer science</a> – dosłownie: nauka o komputerze – co może być mylące i dlatego jest krytykowane w środowiskach akademickich i informatycznych.</p>
 
 						<p>W języku polskim termin ten zaproponował w październiku 1968 Romuald Marczyński w Zakopanem na ogólnopolskiej konferencji poświęconej "maszynom matematycznym" na wzór (fr.) informatique i (niem.) Informatik.</p>
-						Przegląd dyscyplin</p>
+						<p><u>Przegląd dyscyplin</u></p>
 						<p>Współczesna informatyka jest obecnie bardzo szeroką dziedziną. Jest zarówno dyscypliną naukową, podobnie jak fizyka lub chemia, a także jest mocno powiązana z działalnością gospodarczą i wieloma innymi dziedzinami życia.</p>
 
 						<p>Bardziej znane i popularne działy informatyki to przede wszystkim: (kolejność alfabetyczna)
 
-						<ul><li>administracja sieciowa – zarządzanie siecią komputerową</li>
+						<ul><li><i>administracja sieciowa</i> – zarządzanie siecią komputerową</li>
 						<li>administracja systemem – zarządzanie systemem informatycznym;</li>
 						<li>algorytmika – tworzenie i analizowanie algorytmów. Podstawowa, najstarsza dyscyplina informatyki;</li>
 						<li>architektura procesorów – projektowanie procesorów, bez których nie byłoby komputerów;</li>
@@ -96,24 +96,26 @@ var disqus_url = 'example.com; localhost';
 						<p>Autor: <a>Wikipedia</a></p>
 						<hr />
 						<h1 style="font-variant: small-caps;">Komentarze</h1>
-						<div>
-						<div id="disqus_thread"></div>
- <div id="disqus_thread"></div> 
-<script type="text/javascript">
-/* <![CDATA[ */
-var disqus_shortname = 'mywebsiteshortname'; // the real thing, this is just for show
+<div id="disqus_thread"></div>
+<script>
 
-/* * * DON'T EDIT BELOW THIS LINE * * */
-(function() {
-    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = '//flameman.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
 })();
-/* ]]> */
 </script>
-<noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="//disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
-						</div>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                     </div>
                 </div>
             </div>
