@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+    <meta name="description" content="Strona do notatek">
+    <meta name="author" content="Artur Dudka i Łukasz Nogacki">
+
+    <title>Notatki dla studentów</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Nasze CSSy -->
+	<link href="css/style.css" rel="stylesheet">
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav" style="padding-top: 17px;">
+                <li class="sidebar-brand">
+                    <a href="index.html">
+                        <img src="gfx/logo.png" width="36" height="36" alt="Logo" />
+                    </a>
+                </li>
+                <li>
+                    <a href="notatki.html">Notatki</a>
+                </li>
+                <li>
+                    <a href="dodaj.html">Dodaj</a>
+                </li>
+                <li>
+                    <a href="biblioteka.html">Biblioteka</a>
+                </li>
+				<div style="position:fixed; bottom:0px; margin-left: 15px; margin-bottom: 5px;">
+                    <a href="#">Wyloguj</a>
+                </div>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Treść -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+				<div style="float: right;"><a href="index.html" class="btn btn-default" id="menu-zaloguj">Zaloguj</a> <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">☰</a></div>
+                    <div class="col" style="margin-top: -16px; margin-right: 15px; margin-left: 15px; z-index: -1">
+                        <h1 style="font-variant: small-caps;">Witaj studencie!</h1>
+                        <p>Sam wiesz, że notatki często są cenniejsze od najcenniejszych skarbów. Nasza strona to klucz do tego skarbca wiedzy. Ułatwi Ci zapisywanie notatek i dzielenie się nimi ze swoim znajomym.</p>
+						<br />
+						
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Skrypt jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Skrypt do chowania menu -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>

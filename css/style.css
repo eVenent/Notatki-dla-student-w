@@ -45,3 +45,25 @@
 	border-radius: 0 0 5px 5px;
 	padding: 10px 10px 10px 10px;	
 }
+
+.sidebar-nav li a.button {
+	margin-left: 5px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+input.title {
+	width: 80%;
+    font-size: 36px;
+	font-variant: small-caps;
+	border: 0px;
+}
+
+input.share {
+	width: 400px;
+}
+
+.logowanie input {
+	margin-top: 10px;
+	margin-left: 10px;
+}
